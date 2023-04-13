@@ -1,0 +1,127 @@
+<footer class="footer">
+    <div class="footer__links">
+        <div class="footer__item">
+            <a href="/about" class="footer__about">
+                <span>О проекте</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/start" class="footer__start">
+                <span>Пользовательское соглашение</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/materials" class="footer__materials">
+                <span>Материалы</span>
+            </a>
+        </div>
+        <div class="ageLimit">
+            <svg  viewBox="0 0 23 23">
+                <use xlink:href="/images/sprite.svg#icon_age-limit"/>
+            </svg>
+        </div>
+    </div>
+    <div class="footer__delimiter"></div>
+    <div class="footer__support">
+        <div class="footer__support__contacts">
+            <div class="footer__item footer__call">
+                <a href="tel:8 495 969 7900">
+                    8 495 969 7900
+                </a>
+            </div>
+            <div class="footer__item footer__mail">
+                <a href="mailto:support@watchplayspeak.ru">
+                    support@watchplayspeak.ru
+                </a>
+            </div>
+        </div>
+        <div class="footer__time">С 06:00 до 18:00 в рабочие дни (время московское)</div>
+    </div>
+</footer>
+{#<script>#}
+{#    const locale = "ru"; // Student or default locale(ru)#}
+{#    const studentLocale = null; // Student locale or null#}
+
+{#    initCodeMask();#}
+{#</script>#}
+
+
+
+<script>
+    const locale = "ru";
+    const studentLocale = null;
+
+    let progressDone = 0;
+    let progressTotal = 4;
+    const doneSet = new Set();
+
+    function throttle(func, timeFrame) {
+        let lastTime = 0;
+        return function (...args) {
+            let now = new Date();
+            if (now - lastTime >= timeFrame) {
+                func(...args);
+                lastTime = now;
+            }
+        };
+    }
+
+    function sendBookmark(bookmark, videoId) {
+        let currentTime = this.currentTime();
+        if (currentTime !== 0 && currentTime !== bookmark) {
+            fetch(`/lessons/api/bookmark/${videoId}/${currentTime}`, {method: 'POST'})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!doneSet.has(videoId)) {
+                        if (data.progress === 'Done') {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'inline';
+                            doneSet.add(videoId);
+                            progressDone++;
+                            document.getElementById('progress_bar').style.width = `${(progressDone / progressTotal).toFixed(2) * 100}%`;
+                            document.getElementById('progress_text').textContent = `Пройдено ${progressDone} из ${progressTotal}`;
+                        } else {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'inline';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'none';
+                        }
+                    }
+                });
+        }
+    }
+
+    [...document.getElementsByTagName('video')].forEach(function (video) {
+        let videoId = video.dataset.id;
+        let videoPlayer = videojs(video, {
+            html5: {
+                vhs: {overrideNative: true},
+                nativeVideoTracks: false,
+                nativeAudioTracks: false,
+                nativeTextTracks: false
+            }
+        });
+        videoPlayer.playsinline(true);
+
+
+        videoPlayer.on('error', function (e) {
+            e.stopImmediatePropagation();
+        });
+        let bookmark = parseFloat(video.dataset.bookmark);
+        videoPlayer.currentTime(bookmark);
+        if (video.dataset.progress === 'Done') {
+            doneSet.add(videoId);
+        }
+        videoPlayer.ready(function () {
+            this.on('timeupdate', throttle(() => sendBookmark.call(this, bookmark, videoId), 2500));
+            this.on('ended', () => sendBookmark.call(this, bookmark, videoId));
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

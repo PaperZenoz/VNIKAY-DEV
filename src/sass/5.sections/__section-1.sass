@@ -1,0 +1,479 @@
+body
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  font-size: 18px
+  @media screen and (max-width: 1365px)
+    font-size: 14px
+
+
+input::-webkit-input-placeholder
+  color: $light-gray
+
+input::-moz-placeholder
+  color: $light-gray
+
+input:-moz-placeholder
+  color: $light-gray
+
+input:-ms-input-placeholder
+  color: $light-gray
+
+
+input[type="text"]
+  line-height: 1
+
+
+.color-gray
+  color: $gray
+
+//HEADER
+.header
+  display: flex
+  align-items: center
+
+  &__logo
+    width: 195px
+    height: 50px
+
+  &__inner
+    width: 100%
+
+  &__user__avatar
+    width: 26px
+    height: 26px
+    margin-right: 7px
+
+  &__user__name
+    font-size: 20px
+
+  &__user__icon_toggle
+    width: 22px
+    height: 22px
+
+//ЯЗЫКИ
+.locale
+  &__value
+    width: 181px
+    height: 36px
+
+  &__dropdown__item
+    padding-top: 0
+    padding-bottom: 0
+
+
+//КУРСЫ
+.course
+  &__success
+    margin-bottom: 50px
+    padding-bottom: 40px
+    @media screen and (max-width: 1000px)
+      margin-bottom: 0px
+      padding: 20px 15px 5px
+
+
+  //ШАПКА
+  &__head
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+    @media screen and (max-width: 1023px)
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 30px
+
+
+  &__done
+    max-width: 380px
+    width: 100%
+    margin-bottom: 30px
+
+  &__done-title
+    margin-bottom: 30px
+    @media screen and (max-width: 1365px)
+      margin-bottom: 15px
+
+
+  &__license-title
+    font-size: 26px
+    @extend %fy
+    margin-bottom: 5px
+
+    svg
+      width: 24px
+      height: 28px
+      margin-right: 5px
+
+    @media screen and (max-width: 1365px)
+      font-size: 20px
+
+
+  &__license-subtitle
+    font-size: 13px
+    margin-bottom: 5px
+
+
+//ПОИСК
+.courses__search
+  .input
+    padding: 10px 15px
+
+  button
+    color: $dark-green
+
+
+//СПИСОК КУРСОВ
+.course-list
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 20px
+  @media screen and (max-width: 1023px)
+    grid-template-columns: repeat(2, 1fr)
+    gap: 15px
+  @media screen and (max-width: 639px)
+    grid-template-columns: repeat(1, 1fr)
+
+
+.courses-list
+  padding-bottom: 30px
+
+//КАРТОЧКА КУРСА
+.course-card
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #212121
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.15)
+  border-radius: 8px
+  padding: 20px
+
+  &__title
+    font-size: 17px
+    @extend %700
+
+  &__subtitle
+    font-size: 13px
+
+  &__img
+    width: 170px
+    height: 170px
+    border-radius: 50%
+    margin: 0 auto 20px
+
+  &__progress-text
+    @extend %fb
+    font-size: 11px
+    margin-bottom: 5px
+
+
+//ПРОЦЕСС
+.course-card
+  position: relative
+  color: $black
+  text-decoration: none
+
+  &:before
+    content: ''
+    position: absolute
+    right: 17px
+    top: 17px
+    display: block
+    width: 24px
+    height: 24px
+    border-radius: 50%
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23DEDEDE'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.6945 8.20055C18.136 8.58398 18.1831 9.25274 17.7997 9.69426L12.5892 15.6943C12.4013 15.9105 12.1339 16.0415 11.8479 16.0572C11.5619 16.073 11.2817 15.9722 11.0713 15.7778L7.28183 12.2778C6.85225 11.8811 6.82565 11.2112 7.22241 10.7816C7.61918 10.352 8.28906 10.3254 8.71864 10.7222L11.7061 13.4814L16.2008 8.30575C16.5842 7.86422 17.253 7.81713 17.6945 8.20055Z' fill='%239C9C9C'/%3E%3C/svg%3E")
+
+  &.done:before
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12' fill='%2385EF60'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.6945 8.20055C18.136 8.58398 18.1831 9.25274 17.7997 9.69426L12.5892 15.6943C12.4013 15.9105 12.1339 16.0415 11.8479 16.0572C11.5619 16.073 11.2817 15.9722 11.0713 15.7778L7.28183 12.2778C6.85225 11.8811 6.82565 11.2112 7.22241 10.7816C7.61918 10.352 8.28906 10.3254 8.71864 10.7222L11.7061 13.4814L16.2008 8.30575C16.5842 7.86422 17.253 7.81713 17.6945 8.20055Z' fill='black'/%3E%3C/svg%3E%0A")
+
+  &.process:before
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23EFDE43'/%3E%3Cpath d='M10.2857 9.07668C10.2857 8.48191 9.77404 7.99976 9.14286 7.99976C8.51167 7.99976 8 8.48191 8 9.07668V13.9228C8 14.5176 8.51167 14.9998 9.14286 14.9998C9.77404 14.9998 10.2857 14.5176 10.2857 13.9228V9.07668Z' fill='black'/%3E%3Cpath d='M16 9.07668C16 8.48191 15.4883 7.99976 14.8571 7.99976C14.226 7.99976 13.7143 8.48191 13.7143 9.07668V13.9228C13.7143 14.5176 14.226 14.9998 14.8571 14.9998C15.4883 14.9998 16 14.5176 16 13.9228V9.07668Z' fill='black'/%3E%3C/svg%3E%0A")
+
+
+//ПЕРЕКРЫТИЯ
+.course-card
+  &__img:before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    border-radius: 50%
+    @extend %transition
+    background-color: rgba($green, 0.8)
+    z-index: 10
+    opacity: 0
+    background-image: url("data:image/svg+xml,%3Csvg width='71' height='76' viewBox='0 0 71 76' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_6969_175717)'%3E%3Cpath d='M58.0857 42.9501C61.9714 40.7501 61.9714 35.2499 58.0857 33.0499L18.7429 10.7743C14.8571 8.57426 10 11.3243 10 15.7244L10 60.2756C10 64.6757 14.8571 67.4257 18.7429 65.2257L58.0857 42.9501Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_6969_175717' x='0' y='0' width='71' height='76' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_6969_175717'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_6969_175717' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+    background-position: center left 55%
+    background-repeat: no-repeat
+
+  &:hover .course-card__img:before
+    opacity: 1
+
+
+.course-card.done .course-card__img:before
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='65' height='71' viewBox='0 0 65 71' fill='none'%3E%3Cg filter='url(%23filter0_d_6969_174314)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.4375 57.4166C16.4375 59.0735 15.0944 60.4166 13.4375 60.4166C11.7806 60.4166 10.4375 59.0735 10.4375 57.4166V44.6104C10.4375 42.9536 11.7806 41.6104 13.4375 41.6104H26.2437C27.9006 41.6104 29.2437 42.9536 29.2437 44.6104C29.2437 46.2673 27.9006 47.6104 26.2437 47.6104H19.9485C21.6866 49.1088 23.7133 50.2596 25.9201 50.983C29.4745 52.1482 33.3088 52.1432 36.86 50.9687C40.4113 49.7942 43.4926 47.5122 45.6514 44.4575C47.8101 41.4029 48.9328 37.7367 48.8545 33.997C48.7761 30.2574 47.5009 26.6413 45.2161 23.6798C42.9313 20.7183 39.7572 18.5672 36.1599 17.5425C32.5625 16.5178 28.7314 16.6733 25.2289 17.9863C21.7265 19.2993 18.7372 21.7006 16.7 24.8376C15.7976 26.2271 13.9397 26.6221 12.5501 25.7197C11.1605 24.8173 10.7656 22.9593 11.668 21.5698C14.4041 17.3566 18.4188 14.1315 23.1228 12.3681C27.8268 10.6047 32.9722 10.3958 37.8036 11.772C42.6351 13.1483 46.898 16.0373 49.9667 20.0148C53.0353 23.9923 54.7479 28.8488 54.8531 33.8714C54.9583 38.8939 53.4506 43.8179 50.5512 47.9204C47.6518 52.0229 43.5136 55.0879 38.744 56.6653C33.9744 58.2427 28.8248 58.2494 24.0511 56.6845C21.2577 55.7688 18.6792 54.3432 16.4375 52.4975V57.4166Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_6969_174314' x='0.4375' y='0.873413' width='64.4199' height='69.5432' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_6969_174314'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_6969_174314' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E")
+  background-position: center center
+
+
+//ПОЛОСКА ПРОЦЕССА
+.progress-line
+  background-color: #C9D6D6
+  height: 4px
+  border-radius: 4px
+  position: relative
+  overflow: hidden
+
+  &__done
+    height: 4px
+    border-radius: 4px
+    background-color: $green
+    position: absolute
+    bottom: 0
+    z-index: 10
+    left: 0
+
+
+  &--big
+    height: 14px
+    border-radius: 20px
+
+    .progress-line__done
+      height: 14px
+      border-radius: 20px
+
+
+//ПЛЕЕР
+.video-js .vjs-big-play-button
+  width: 122px
+  height: 122px
+  border-radius: 50%
+  background-color: $green
+  border: none
+  transform: translate(35%, 0%)
+  @media screen and (max-width: 1000px)
+    width: 77px
+    height: 77px
+
+.video-js .vjs-big-play-button
+  line-height: 77px
+  font-size: 70px
+  @media screen and (max-width: 1000px)
+    font-size: 50px
+
+
+.lesson__item__video
+  max-width: 420px
+  height: 890px
+  position: relative
+  @media screen and (max-width: 1000px)
+    width: 270px
+    height: 455px
+
+
+.lesson__item__arrows
+  @extend %acy
+  z-index: 10
+  width: 100%
+
+.lesson__item__arrow
+  transform: translateY(-50%)
+
+
+  svg
+    width: 53px
+    height: 53px
+    @media screen and (max-width: 1000px)
+      width: 36px
+      height: 36px
+
+  &--next
+    position: absolute
+    right: 45px
+
+
+  &--prev
+    position: absolute
+    left: 45px
+
+.lesson__video.vjs-playing + .lesson__item__arrows
+  display: none
+
+
+//КАРТОЧКА УРОКА
+
+
+.lesson__item-n
+  font-size: 32px
+  padding-bottom: 10px
+  @media screen and (max-width: 1000px)
+    font-size: 22px
+
+
+.lesson__item-subtitle
+  color: $gray
+  font-size: 22px
+  margin-bottom: 40px
+  @extend %fy
+  line-height: 1
+  @media screen and (max-width: 1000px)
+    font-size: 18px
+
+
+//ШАПКА УРОКА
+.lesson__header
+  background-color: white !important
+  background-image: url("../../images/lesson/bg.png")
+  background-position: right
+  background-repeat: no-repeat
+  background-size: contain
+  color: $black
+  padding: 15px 20px
+  height: auto
+  border-radius: 12px 12px 0 0
+  position: relative
+
+.lesson__number
+  flex-grow: initial
+  margin-bottom: 15px
+  @media screen and (max-width: 1000px)
+    font-size: 14px
+    margin-bottom: 5px
+
+.lesson__navigation
+  display: flex
+  margin-left: 20px
+  @media screen and (max-width: 1000px)
+    position: relative
+    left: 0
+    margin-left: 0
+
+
+  a
+    background-color: $green
+    border-radius: 50%
+    width: 32px
+    height: 32px
+    @extend %fc
+    line-height: 32px
+
+    &.disabled
+      background: #F6F7F9
+
+      svg path
+        fill: $gray
+
+
+  svg
+    height: 16px
+    width: auto
+
+.lesson__prev
+  margin-left: 0 !important
+
+body
+  scroll-behavior: smooth
+
+.lesson
+  &__title
+    @extend %fy
+    margin-bottom: 20px
+    @media screen and (max-width: 1000px)
+      flex-direction: column
+      align-items: flex-start
+      font-size: 20px
+
+  &__progress-info
+    font-size: 11px
+
+
+  &__progress
+    height: 8px
+    margin-top: 0
+    border-radius: 0 0 12px 12px
+    margin-bottom: 50px
+    @media screen and (max-width: 1000px)
+      margin-bottom: 10px
+
+
+    .progress-line__done
+      height: 8px
+      border-radius: 0px 4px 4px 0px
+
+
+//СПИСОК ИЗ ШАПКИ
+.lesson__list
+  padding: 0 20px
+  position: absolute
+  right: 0
+  left: 0
+  bottom: 0
+  transform: translateY(calc(100% + 8px))
+  z-index: 10
+  background-color: white
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2)
+  border-radius: 0 0 12px 12px
+  display: none
+
+
+.lesson__list-item
+  padding: 12px 0
+  background-color: white
+  font-size: 20px
+  @extend %600
+  border-bottom: 1px solid $light-gray
+  color: $black
+  text-decoration: none
+  display: block
+
+  &.active, &:hover
+    color: $green
+
+  &:last-child
+    border-bottom: none
+
+
+.lesson
+  &__list-button
+    svg
+      &:first-child
+        display: flex
+
+      &:nth-child(2)
+        display: none
+
+    &.open
+      background-color: #F6F7F9
+
+      svg
+        &:first-child
+          display: none
+
+        &:nth-child(2)
+          display: flex
+
+
+//МАТЕРИАЛЫ
+.material__load
+  span
+    font-size: 12px
+
+.materials
+  margin-bottom: 75px
+
+.materials .course__head
+  margin-bottom: 45px
+
+
+//ФУТЕР
+.footer
+  font-family: 'SF Pro Display', sans-serif
+  @extend %500
+
+
+
+
+
+
+
+
+
+
+

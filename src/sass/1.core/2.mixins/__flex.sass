@@ -1,0 +1,43 @@
+@mixin gap($xxl, $xl, $lg, $md, $sm)
+  display: flex
+  gap: $xxl
+  @media screen and (max-width: 1919px)
+    gap: $xl
+  @media screen and (max-width: 1365px)
+    gap: $lg
+  @media screen and (max-width: 1023px)
+    gap: $md
+  @media screen and (max-width: 639px)
+    gap: $sm
+
+
+%f
+  display: flex
+  align-items: center
+  justify-content: center
+
+%fx
+  display: flex
+  justify-content: center
+
+%fy
+  display: flex
+  align-items: center
+
+%fc
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+%fb
+  display: flex
+  justify-content: space-between
+
+
+%col
+  flex-direction: column
+
+
+%gap
+  gap: 15px

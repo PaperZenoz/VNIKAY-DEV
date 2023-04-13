@@ -1,0 +1,94 @@
+{% include "./2.parts/header.njk" %}
+{% set  link = 'https://dev.vnikay.ru' %}
+
+
+<main class="main">
+    <div class="wrapper">
+        <section class="main__block materials">
+            {% set  _ = 'course' %}
+            <div class="course__head">
+                <div class="{{ _ }}__done">
+                    <h2 class="{{ _ }}__done-title h2 h2--with-icon">
+                        <svg viewBox="0 0 53 53">
+                            <use xlink:href="/images/second-sprite.svg#star"></use>
+                        </svg>
+                        Ваш прогресс
+                    </h2>
+                    <div class="course__progress">
+                        <div class="course__progress__text">
+                            <span>Пройдено</span>: <span style="color:black;font-weight: 600;">16</span>/<span>129</span>
+                        </div>
+
+
+                        <div class="progress-line progress-line--big" data-general="129" data-done="16">
+                            <div class="progress-line__done">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="{{ _ }}__license">
+                    <strong class="{{ _ }}__license-title">
+                        <svg viewBox="0 0 24 28">
+                            <use xlink:href="/images/second-sprite.svg#timer"/>
+                        </svg>
+                        360 ДНЕЙ
+                    </strong>
+                    <div class="{{ _ }}__license-subtitle color-gray">до окночания действия лицензии</div>
+                    <button class="btn" onclick="showLicenseModal()">
+                        Ввести новый ключ
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="courses__search">
+                <form method='GET'>
+                    <input name="search" class="input" placeholder="Поиск" id="search" value=""/>
+                    <button type="submit">
+                        <svg viewBox="0 0 22 22">
+                            <use xlink:href="/images/sprite.svg#icon_search"/>
+                        </svg>
+                        <span>Найти</span>
+                    </button>
+                </form>
+            </div>
+
+
+
+            <div class="courses__title">Материалы</div>
+
+            <ol class="materials__list">
+                {% for i in range(1, 10) %}
+                    <li class="material">
+                        <span class="material__count">{{ i }}</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>{{ i }}</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="{{link}}/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                {% endfor %}
+
+
+            </ol>
+
+        </section>
+    </div>
+</main>
+
+
+
+{% include "./2.parts/footer.njk" %}

@@ -1,0 +1,61 @@
+@mixin pot($xxl, $xl, $lg, $md, $sm)
+  top: $xxl
+  @media screen and (max-width: 1919px)
+    top: $xl
+  @media screen and (max-width: 1365px)
+    top: $lg
+  @media screen and (max-width: 1023px)
+    top: $md
+  @media screen and (max-width: 639px)
+    top: $sm
+
+@mixin pol($xxl, $xl, $lg, $md, $sm)
+  left: $xxl
+  @media screen and (max-width: 1919px)
+    left: $xl
+  @media screen and (max-width: 1365px)
+    left: $lg
+  @media screen and (max-width: 1023px)
+    left: $md
+  @media screen and (max-width: 639px)
+    left: $sm
+
+
+@mixin por($xxl, $xl, $lg, $md, $sm)
+  right: $xxl
+  @media screen and (max-width: 1919px)
+    right: $xl
+  @media screen and (max-width: 1365px)
+    right: $lg
+  @media screen and (max-width: 1023px)
+    right: $md
+  @media screen and (max-width: 639px)
+    right: $sm
+
+
+@mixin pob($xxl, $xl, $lg, $md, $sm)
+  bottom: $xxl
+  @media screen and (max-width: 1919px)
+    bottom: $xl
+  @media screen and (max-width: 1365px)
+    bottom: $lg
+  @media screen and (max-width: 1023px)
+    bottom: $md
+  @media screen and (max-width: 639px)
+    bottom: $sm
+
+%ac
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+%acx
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+%acy
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)

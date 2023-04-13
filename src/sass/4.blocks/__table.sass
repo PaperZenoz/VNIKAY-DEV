@@ -1,0 +1,30 @@
+.table
+  width: 100%
+  table-layout: fixed
+  overflow: auto
+  word-break: break-word
+  font-size: 14px
+  @media screen and (max-width: 1919px)
+    font-size: 12px
+
+  @media screen and (max-width: 1365px)
+    width: 900px
+
+  td
+    padding: 30px 15px
+    @media screen and (max-width: 1024px)
+      padding: 30px 10px
+
+    &:nth-child(2n + 1)
+      background: rgba(#3f60fa, 0.05)
+
+  tr
+    border-bottom: 1px solid #e6e6e6
+
+  th
+    padding: 15px 10px
+    height: 42px
+    line-height: 1.2
+    background: #3f60fa
+    color: white
+    text-align: left

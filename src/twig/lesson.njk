@@ -1,0 +1,241 @@
+{% include "./2.parts/header.njk" %}
+{% set  link = 'https://dev.vnikay.ru' %}
+
+
+
+
+{% set  _ = 'lesson' %}
+<main class="main lesson">
+    <section class="wrapper">
+        <div class="lesson__header">
+            <div class="lesson__number">
+                Буквы и звуки: А-Й
+            </div>
+            <div class="{{ _ }}__title">
+                <span>Буква А</span>
+                <div class="lesson__navigation">
+                    <a href="{{ link }}/lessons/"
+                       class="{{ _ }}__arrow lesson__prev disabled">
+                        <svg viewBox="0 0 15 13" style="transform: rotate(180deg)">
+                            <path d="M7.14758 4.26816H12.5001C13.5421 4.26816 14.3947 5.10346 14.3947 6.12437C14.3947 7.14529 13.5421 7.98059 12.5001 7.98059H7.14758V11.3032C7.14758 12.1385 6.12447 12.5469 5.53713 11.9529L0.269988 6.77405C-0.0899961 6.40281 -0.0899961 5.82738 0.269988 5.45614L5.53713 0.277308C6.12447 -0.316679 7.14758 0.110248 7.14758 0.926981V4.26816Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="{{ _ }}__list-button">
+                        <svg viewBox="0 0 15 15">
+                            <use xlink:href="images/second-sprite.svg#lesson-arrow-list"/>
+                        </svg>
+                        <svg viewBox="0 0 15 15">
+                            <use xlink:href="images/second-sprite.svg#lesson-arrow-list-close"/>
+                        </svg>
+                    </a>
+                    <a href="{{ link }}/lessons/2"
+                       class="{{ _ }}__arrow lesson__next">
+                        <svg viewBox="0 0 15 14">
+                            <path d="M7.85242 8.73184L2.49992 8.73184C1.45786 8.73184 0.605268 7.89654 0.605268 6.87562C0.605268 5.85471 1.45786 5.01941 2.49992 5.01941L7.85242 5.01941L7.85242 1.6968C7.85242 0.861501 8.87553 0.453133 9.46287 1.04712L14.73 6.22595C15.09 6.59719 15.09 7.17262 14.73 7.54386L9.46287 12.7227C8.87553 13.3167 7.85242 12.8898 7.85242 12.073L7.85242 8.73184Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="{{ _ }}__progress-info">
+                Пройдено 1 / 11
+            </div>
+
+
+            {% set  list = [
+                'A',
+                'Б',
+                'В',
+                'Г',
+                'Д',
+                'Е',
+                'Ё',
+                'Ж',
+                'З',
+                'И',
+                'Й',
+            ] %}
+
+
+
+
+            <div class="{{ _ }}__list">
+                {% for item in list %}
+                    <a href="#" class="{{ _ }}__list-item {% if loop.index == 1 %} active{% endif %}">
+                        Буква
+                        <span>{{ item }}</span>
+
+                    </a>
+                {% endfor %}
+
+
+            </div>
+
+
+        </div>
+        <div class="lesson__progress progress-line" data-general="11" data-done="1">
+            <div class="progress-line__done">
+
+            </div>
+        </div>
+
+
+        {% set  list = [{
+            title: '1.1 Видео с названием',
+            subtitle: 'Выполнить задание'
+
+        },    {
+            title: '1.2 Видео с названием',
+            subtitle: 'Задание выполнено '
+        }] %}
+        {% for item in list %}
+            <div id="lesson-{{ loop.index }}" class="lesson__item">
+                <div class="lesson__item-n">
+                    <span>{{ item.title }}</span>
+                    {% if loop.index == 1 %}
+                        <svg viewBox="0 0 34 34" id="play_icon_2" style="display:inline">
+                            <use xlink:href="/images/sprite.svg#icon_process"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="pause_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_pause"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="done_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_done"></use>
+                        </svg>
+                    {% endif %}
+
+                    {% if loop.index == 2 %}
+                        <svg viewBox="0 0 34 34" id="play_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_process"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="pause_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_pause"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="done_icon_2" style="display:inline">
+                            <use xlink:href="/images/sprite.svg#icon_done"></use>
+                        </svg>
+                    {% endif %}
+
+
+                </div>
+
+
+                <div class="lesson__item-subtitle">
+                    {{ item.subtitle }}
+
+                    {% if loop.index == 2 %}
+                        <img src="images/lesson/like.png" style="margin-left: 5px" alt=""/>
+                    {% endif %}
+                </div>
+
+                <div class="lesson__item__video">
+                    <video data-id="7" data-bookmark="0.0"
+                           data-progress="Play" data-src="/lessons/api/video/7.m3u8"
+                           controls class="lesson__video video-js vjs-big-play-centered vjs-fill"
+                           data-setup='{ "playbackRates": [0.5, 1, 1.5, 2] }'>
+                        Your browser does not support the video tag.
+                        <source src="/lessons/api/video/7.m3u8" type="application/x-mpegURL"/>
+                        <track kind="subtitles"
+                               src="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L02/subtitles_03.vtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T053628Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=11a9387052241b3e2da4bdec4e4c2eb7ecd8805b19efbfc94f72d1bf62a67ab2"
+                               srclang="ru" label="Русский" default>
+                    </video>
+                    <div class="lesson__item__arrows">
+                        <a href="#lesson-{{ loop.index + 1 }}" class="lesson__item__arrow lesson__item__arrow--next">
+                            <svg viewBox="0 0 53 54">
+                                <use xlink:href="/images/second-sprite.svg#player-arrow-next"/>
+                                </use>
+                            </svg>
+
+                        </a>
+                        <a href="#lesson-{{ loop.index - 1 }}" class="lesson__item__arrow lesson__item__arrow--prev">
+                            <svg viewBox="0 0 53 54">
+                                <use xlink:href="/images/second-sprite.svg#player-arrow-prev"/>
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+
+    </section>
+</main>
+
+{% include "./2.parts/footer.njk" %}
+<script>
+    const locale = "ru"; // Student or default locale(ru)
+    const studentLocale = null; // Student locale or null
+
+    let progressDone = 0;
+    let progressTotal = 4;
+    const doneSet = new Set();
+
+    function throttle(func, timeFrame) {
+        let lastTime = 0;
+        return function (...args) {
+            let now = new Date();
+            if (now - lastTime >= timeFrame) {
+                func(...args);
+                lastTime = now;
+            }
+        };
+    }
+
+    function sendBookmark(bookmark, videoId) {
+        let currentTime = this.currentTime();
+        if (currentTime !== 0 && currentTime !== bookmark) {
+            fetch(`{{ link }}/lessons/api/bookmark/${videoId}/${currentTime}`, {method: 'POST'})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!doneSet.has(videoId)) {
+                        if (data.progress === 'Done') {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'inline';
+                            doneSet.add(videoId);
+                            progressDone++;
+                            document.getElementById('progress_bar').style.width = `${(progressDone / progressTotal).toFixed(2) * 100}%`;
+                            document.getElementById('progress_text').textContent = `Пройдено ${progressDone} из ${progressTotal}`;
+                        } else {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'inline';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'none';
+                        }
+                    }
+                });
+        }
+    }
+
+    [...document.getElementsByTagName('video')].forEach(function (video) {
+        let videoId = video.dataset.id;
+        let videoPlayer = videojs(video, {
+            html5: {
+                vhs: {overrideNative: true},
+                nativeVideoTracks: false,
+                nativeAudioTracks: false,
+                nativeTextTracks: false
+            }
+        });
+        videoPlayer.playsinline(true);
+
+        videoPlayer.on('error', function (e) {
+            e.stopImmediatePropagation();
+        });
+        let bookmark = parseFloat(video.dataset.bookmark);
+        videoPlayer.currentTime(bookmark);
+        if (video.dataset.progress === 'Done') {
+            doneSet.add(videoId);
+        }
+        videoPlayer.ready(function () {
+            this.on('timeupdate', throttle(() => sendBookmark.call(this, bookmark, videoId), 2500));
+            this.on('ended', () => sendBookmark.call(this, bookmark, videoId));
+        });
+    });
+</script>
+</body>
+</html>

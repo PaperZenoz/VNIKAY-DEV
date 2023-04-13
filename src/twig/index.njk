@@ -1,0 +1,34 @@
+{% include "./2.parts/header.njk" %}
+
+
+<style>
+    .ancors{
+        padding: 100px 0;
+    }
+
+    .ancors__list > a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        background-color: #39D7D7;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+{% set  _ = 'ancors' %}
+
+<div class="ancors">
+    <div class="wrapper">
+        <div class="{{_}}__list">
+            <a href="courses.html">Курсы</a>
+            <a href="lesson.html">Открытый урок</a>
+            <a href="materials.html">Материалы</a>
+        </div>
+    </div>
+</div>
+
+{% include "./2.parts/footer.njk" %}

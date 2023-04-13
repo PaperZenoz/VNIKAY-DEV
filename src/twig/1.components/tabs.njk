@@ -1,0 +1,7 @@
+<div class="tabs">
+    {% for item in  tabs %}
+        <a href="#" class="tabs__item {% if item.active === true %} active {% endif %}">
+            {{ item.text }}
+        </a>
+    {% endfor %}
+</div>

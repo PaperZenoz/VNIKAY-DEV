@@ -1,0 +1,27 @@
+#preloader
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  background: white
+  z-index: 100000000000
+
+
+.preloader
+  width: 56px
+  height: 56px
+  border: 8px solid rgba($main-color, 0.25)
+  border-top-color: $main-color
+  border-radius: 50%
+  position: relative
+  animation: loader-rotate 1s linear infinite
+  top: 50%
+  margin: -28px auto 0 auto
+
+
+@keyframes loader-rotate
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(360deg)

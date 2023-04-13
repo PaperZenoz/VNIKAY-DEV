@@ -1,0 +1,48 @@
+@mixin g($xxl, $xl, $lg, $md, $sm)
+  display: grid
+  grid-template-columns: repeat($xxl, 1fr)
+  @media screen and (max-width: 1919px)
+    grid-template-columns: repeat($xl, 1fr)
+  @media screen and (max-width: 1365px)
+    grid-template-columns: repeat($lg, 1fr)
+  @media screen and (max-width: 1023px)
+    grid-template-columns: repeat($md, 1fr)
+  @media screen and (max-width: 639px)
+    grid-template-columns: repeat($sm, 1fr)
+
+@mixin gx($xxl, $xl, $lg, $md, $sm)
+  grid-column-gap: $xxl
+  @media screen and (max-width: 1919px)
+    grid-column-gap: $xl
+  @media screen and (max-width: 1365px)
+    grid-column-gap: $lg
+  @media screen and (max-width: 1023px)
+    grid-column-gap: $md
+  @media screen and (max-width: 639px)
+    grid-column-gap: $sm
+
+
+@mixin gy($xxl, $xl, $lg, $md, $sm)
+  grid-row-gap: $xxl
+  @media screen and (max-width: 1919px)
+    grid-row-gap: $xl
+  @media screen and (max-width: 1365px)
+    grid-row-gap: $lg
+  @media screen and (max-width: 1023px)
+    grid-row-gap: $md
+  @media screen and (max-width: 639px)
+    grid-row-gap: $sm
+
+
+
+
+
+
+
+
+
+
+
+
+
+

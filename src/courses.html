@@ -1,0 +1,778 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1631-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1631-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1094-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1094-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_557-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_557-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_3-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_3-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Вникай</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../favicon.svg">
+    <link rel="stylesheet" type="text/css" href="https://dev.vnikay.ru/css/style.css"/>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/inputmask.min.js"></script>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/functions.js"></script>
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://dev.vnikay.ru/css/video-js.min.css">
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/video.min.js"></script>
+
+
+    
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a class="header__logo" href="/"></a>
+        <div class="locale-container">
+            <div class="locale">
+                <div class="locale__value" data-value="ru">
+                    <div class="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <use xlink:href="/images/sprite.svg#icon_dropdown"/>
+                    </svg>
+                </div>
+                <div class="locale__dropdown">
+                    <div class="locale__dropdown__item" data-value="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="locale__dropdown__item" data-value="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="locale__dropdown__item" data-value="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="locale__dropdown__item" data-value="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="locale__dropdown__item" data-value="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__user">
+            <img class="header__user__avatar" alt="" src="https://dev.vnikay.ru/images/user.svg"/>
+            <span class="header__user__name">Мой профиль</span>
+            <svg viewBox="0 0 32 32" class="header__user__icon header__user__icon_toggle">
+                <use xlink:href="/images/sprite.svg#icon_arrow-down"/>
+            </svg>
+            <svg viewBox="0 0 40 41" class="header__user__icon header__user__icon_hamburger">
+                <use xlink:href="/images/sprite.svg#icon_menu"/>
+            </svg>
+        </div>
+        <menu class="header__menu">
+            <a class="header__menu__item" href="/password">
+                <svg viewBox="0 0 35 35">
+                    <use xlink:href="/images/sprite.svg#icon_lock"/>
+                </svg>
+                <span>Изменить пароль</span>
+            </a>
+            <a class="header__menu__item" href="/logout">
+                <svg viewBox="0 0 23 26">
+                    <use xlink:href="/images/sprite.svg#icon_exit"/>
+                </svg>
+                <span>Выход</span>
+            </a>
+        </menu>
+    </div>
+</header>
+
+
+
+
+
+
+<div id="licenseModal" class="licenseModal" style="display:none">
+    <div class="licenseModal__form">
+        <button class="licenseModal__form__close" onclick="closeLicenseModal()"></button>
+        <div class="course__promo__img">
+            <img src="https://dev.vnikay.ru/images/code-promo.svg" alt="promo"/>
+        </div>
+        <form action="/courses/1" method="POST" name="license" class="course__code">
+            <label class="label" for="code">Введите лицензионный ключ</label>
+            <input name="code" class="input" id="code" type="text" required
+                   oninvalid="this.setCustomValidity(&quot;\u0417\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u0435 \u044D\u0442\u043E \u043F\u043E\u043B\u0435&quot;)"
+                   oninput="resetErrors.call(this, 'error')">
+            <span class="course__code__reset" onclick="this.previousElementSibling.value=''"></span>
+            <button type="submit" class="button">Далее</button>
+        </form>
+    </div>
+</div>
+
+<main class="main course">
+    <div class="wrapper">
+
+        
+
+        <section class="white-wrap course__success">
+            <h1 class="h1">
+                Готово!
+            </h1>
+            <p>Ваш ключ успешно активирован. Приятных занятий!</p>
+        </section>
+
+
+
+
+
+        <section class="main__block">
+            <div class="course__head">
+                <div class="course__done">
+                    <h2 class="course__done-title h2 h2--with-icon">
+                        <svg viewBox="0 0 53 53">
+                            <use xlink:href="/images/second-sprite.svg#star"></use>
+                        </svg>
+                        Ваш прогресс
+                    </h2>
+                    <div class="course__progress">
+                        <div class="course__progress__text">
+                            <span>Пройдено</span>: <span style="color:black;font-weight: 600;">16</span>/<span>129</span>
+                        </div>
+
+
+                        <div class="progress-line progress-line--big" data-general="129" data-done="16">
+                            <div class="progress-line__done">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="course__license">
+                    <strong class="course__license-title">
+                        <svg viewBox="0 0 24 28">
+                            <use xlink:href="/images/second-sprite.svg#timer"/>
+                        </svg>
+                        360 ДНЕЙ
+                    </strong>
+                    <div class="course__license-subtitle color-gray">до окночания действия лицензии</div>
+                    <button class="btn" onclick="showLicenseModal()">
+                        Ввести новый ключ
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="courses__search">
+                <form method='GET'>
+                    <input name="search" class="input" placeholder="Поиск по урокам…" id="search" value=""/>
+                    <button type="submit">
+                        <svg viewBox="0 0 22 22">
+                            <use xlink:href="/images/sprite.svg#icon_search"/>
+                        </svg>
+                        <span>Найти</span>
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="courses-list">
+                <div class="course__block">
+                    <h2 class="h2">Буквы и звуки</h2>
+                    <br>
+                    <div class="course-list">
+
+
+                        
+
+
+                        
+
+                        
+
+                            <a href="#" class="course-card done">
+                                <h3 class="course-card__title">
+                                    Буквы и звуки: А-Й
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Hərflər və səslər
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/1.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>11</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11"
+                                         data-done="11">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+                            <a href="#" class="course-card process">
+                                <h3 class="course-card__title">
+                                    Буквы и звуки: А-Й
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Hərflər və səslər
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/2.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>5</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11"
+                                         data-done="5">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+                            <a href="#" class="course-card ">
+                                <h3 class="course-card__title">
+                                    Буквы и звуки: А-Й
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Hərflər və səslər
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/3.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11"
+                                         data-done="0">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+
+                    </div>
+                </div>
+                <br>
+                <br>
+
+
+                <div class="course__block">
+                    <h2 class="h2">Базовые фразы</h2>
+                    <br>
+                    <div class="course-list">
+                        
+
+                        
+
+
+
+                        
+
+                            <a href="#" class="course-card">
+                                <h3 class="course-card__title">
+                                    Учёба/Работа
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Araşdırmalar/işləmək
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/11.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11" data-done="0">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+                            <a href="#" class="course-card">
+                                <h3 class="course-card__title">
+                                    Дом
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Ev
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/12.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11" data-done="0">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+                            <a href="#" class="course-card">
+                                <h3 class="course-card__title">
+                                    Ремонт/уборка
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Təmir/təmizləmə
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/13.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11" data-done="0">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+                            <a href="#" class="course-card">
+                                <h3 class="course-card__title">
+                                    Еда
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Qida
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/14.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11" data-done="0">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+                            <a href="#" class="course-card">
+                                <h3 class="course-card__title">
+                                    Свободное время
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Boş vaxt
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/15.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11" data-done="0">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+                            <a href="#" class="course-card">
+                                <h3 class="course-card__title">
+                                    Путешествия
+                                </h3>
+                                <span class="course-card__subtitle">
+                            Səyahətlər
+                        </span>
+                                <br>
+                                <br>
+                                <div class="course-card__img img img--contain">
+                                    <img src="images/course-card/16.png" alt=""/>
+                                </div>
+
+                                <div class="course-card__progress">
+                                    <div class="course-card__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="course-card__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    
+
+                                    <div class="progress-line" data-general="11" data-done="0">
+                                        <div class="progress-line__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        
+
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="footer__links">
+        <div class="footer__item">
+            <a href="/about" class="footer__about">
+                <span>О проекте</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/start" class="footer__start">
+                <span>Пользовательское соглашение</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/materials" class="footer__materials">
+                <span>Материалы</span>
+            </a>
+        </div>
+        <div class="ageLimit">
+            <svg  viewBox="0 0 23 23">
+                <use xlink:href="/images/sprite.svg#icon_age-limit"/>
+            </svg>
+        </div>
+    </div>
+    <div class="footer__delimiter"></div>
+    <div class="footer__support">
+        <div class="footer__support__contacts">
+            <div class="footer__item footer__call">
+                <a href="tel:8 495 969 7900">
+                    8 495 969 7900
+                </a>
+            </div>
+            <div class="footer__item footer__mail">
+                <a href="mailto:support@watchplayspeak.ru">
+                    support@watchplayspeak.ru
+                </a>
+            </div>
+        </div>
+        <div class="footer__time">С 06:00 до 18:00 в рабочие дни (время московское)</div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+    const locale = "ru";
+    const studentLocale = null;
+
+    let progressDone = 0;
+    let progressTotal = 4;
+    const doneSet = new Set();
+
+    function throttle(func, timeFrame) {
+        let lastTime = 0;
+        return function (...args) {
+            let now = new Date();
+            if (now - lastTime >= timeFrame) {
+                func(...args);
+                lastTime = now;
+            }
+        };
+    }
+
+    function sendBookmark(bookmark, videoId) {
+        let currentTime = this.currentTime();
+        if (currentTime !== 0 && currentTime !== bookmark) {
+            fetch(`/lessons/api/bookmark/${videoId}/${currentTime}`, {method: 'POST'})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!doneSet.has(videoId)) {
+                        if (data.progress === 'Done') {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'inline';
+                            doneSet.add(videoId);
+                            progressDone++;
+                            document.getElementById('progress_bar').style.width = `${(progressDone / progressTotal).toFixed(2) * 100}%`;
+                            document.getElementById('progress_text').textContent = `Пройдено ${progressDone} из ${progressTotal}`;
+                        } else {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'inline';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'none';
+                        }
+                    }
+                });
+        }
+    }
+
+    [...document.getElementsByTagName('video')].forEach(function (video) {
+        let videoId = video.dataset.id;
+        let videoPlayer = videojs(video, {
+            html5: {
+                vhs: {overrideNative: true},
+                nativeVideoTracks: false,
+                nativeAudioTracks: false,
+                nativeTextTracks: false
+            }
+        });
+        videoPlayer.playsinline(true);
+
+
+        videoPlayer.on('error', function (e) {
+            e.stopImmediatePropagation();
+        });
+        let bookmark = parseFloat(video.dataset.bookmark);
+        videoPlayer.currentTime(bookmark);
+        if (video.dataset.progress === 'Done') {
+            doneSet.add(videoId);
+        }
+        videoPlayer.ready(function () {
+            this.on('timeupdate', throttle(() => sendBookmark.call(this, bookmark, videoId), 2500));
+            this.on('ended', () => sendBookmark.call(this, bookmark, videoId));
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

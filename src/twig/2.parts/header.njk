@@ -1,0 +1,163 @@
+{% set  link = 'https://dev.vnikay.ru' %}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1631-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1631-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1094-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1094-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_557-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_557-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_3-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_3-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Вникай</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../favicon.svg">
+    <link rel="stylesheet" type="text/css" href="https://dev.vnikay.ru/css/style.css"/>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/inputmask.min.js"></script>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/functions.js"></script>
+
+
+    {#    ВИДЕО#}
+    <link rel="stylesheet" type="text/css" href="{{ link }}/css/video-js.min.css">
+    <script type="text/javascript" src="{{ link }}/js/video.min.js"></script>
+
+
+    {#    ВИДЕО#}
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a class="header__logo" href="/"></a>
+        <div class="locale-container">
+            <div class="locale">
+                <div class="locale__value" data-value="ru">
+                    <div class="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <use xlink:href="/images/sprite.svg#icon_dropdown"/>
+                    </svg>
+                </div>
+                <div class="locale__dropdown">
+                    <div class="locale__dropdown__item" data-value="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="locale__dropdown__item" data-value="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="locale__dropdown__item" data-value="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="locale__dropdown__item" data-value="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="locale__dropdown__item" data-value="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__user">
+            <img class="header__user__avatar" alt="" src="https://dev.vnikay.ru/images/user.svg"/>
+            <span class="header__user__name">Мой профиль</span>
+            <svg viewBox="0 0 32 32" class="header__user__icon header__user__icon_toggle">
+                <use xlink:href="/images/sprite.svg#icon_arrow-down"/>
+            </svg>
+            <svg viewBox="0 0 40 41" class="header__user__icon header__user__icon_hamburger">
+                <use xlink:href="/images/sprite.svg#icon_menu"/>
+            </svg>
+        </div>
+        <menu class="header__menu">
+            <a class="header__menu__item" href="/password">
+                <svg viewBox="0 0 35 35">
+                    <use xlink:href="/images/sprite.svg#icon_lock"/>
+                </svg>
+                <span>Изменить пароль</span>
+            </a>
+            <a class="header__menu__item" href="/logout">
+                <svg viewBox="0 0 23 26">
+                    <use xlink:href="/images/sprite.svg#icon_exit"/>
+                </svg>
+                <span>Выход</span>
+            </a>
+        </menu>
+    </div>
+</header>
+
+

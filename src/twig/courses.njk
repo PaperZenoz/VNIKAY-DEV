@@ -1,0 +1,252 @@
+{% include "./2.parts/header.njk" %}
+{% set  link = 'https://dev.vnikay.ru' %}
+
+
+<div id="licenseModal" class="licenseModal" style="display:none">
+    <div class="licenseModal__form">
+        <button class="licenseModal__form__close" onclick="closeLicenseModal()"></button>
+        <div class="course__promo__img">
+            <img src="{{ link }}/images/code-promo.svg" alt="promo"/>
+        </div>
+        <form action="/courses/1" method="POST" name="license" class="course__code">
+            <label class="label" for="code">Введите лицензионный ключ</label>
+            <input name="code" class="input" id="code" type="text" required
+                   oninvalid="this.setCustomValidity(&quot;\u0417\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u0435 \u044D\u0442\u043E \u043F\u043E\u043B\u0435&quot;)"
+                   oninput="resetErrors.call(this, 'error')">
+            <span class="course__code__reset" onclick="this.previousElementSibling.value=''"></span>
+            <button type="submit" class="button">Далее</button>
+        </form>
+    </div>
+</div>
+
+<main class="main course">
+    <div class="wrapper">
+
+        {% set  _ = 'course' %}
+
+        <section class="white-wrap {{ _ }}__success">
+            <h1 class="h1">
+                Готово!
+            </h1>
+            <p>Ваш ключ успешно активирован. Приятных занятий!</p>
+        </section>
+
+
+
+
+
+        <section class="main__block">
+            <div class="course__head">
+                <div class="{{ _ }}__done">
+                    <h2 class="{{ _ }}__done-title h2 h2--with-icon">
+                        <svg viewBox="0 0 53 53">
+                            <use xlink:href="/images/second-sprite.svg#star"></use>
+                        </svg>
+                        Ваш прогресс
+                    </h2>
+                    <div class="course__progress">
+                        <div class="course__progress__text">
+                            <span>Пройдено</span>: <span style="color:black;font-weight: 600;">16</span>/<span>129</span>
+                        </div>
+
+
+                        <div class="progress-line progress-line--big" data-general="129" data-done="16">
+                            <div class="progress-line__done">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="{{ _ }}__license">
+                    <strong class="{{ _ }}__license-title">
+                        <svg viewBox="0 0 24 28">
+                            <use xlink:href="/images/second-sprite.svg#timer"/>
+                        </svg>
+                        360 ДНЕЙ
+                    </strong>
+                    <div class="{{ _ }}__license-subtitle color-gray">до окночания действия лицензии</div>
+                    <button class="btn" onclick="showLicenseModal()">
+                        Ввести новый ключ
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="courses__search">
+                <form method='GET'>
+                    <input name="search" class="input" placeholder="Поиск по урокам…" id="search" value=""/>
+                    <button type="submit">
+                        <svg viewBox="0 0 22 22">
+                            <use xlink:href="/images/sprite.svg#icon_search"/>
+                        </svg>
+                        <span>Найти</span>
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="courses-list">
+                <div class="course__block">
+                    <h2 class="h2">Буквы и звуки</h2>
+                    <br>
+                    <div class="course-list">
+
+
+                        {% set  _ = 'course-card' %}
+
+
+                        {% set  list = [{
+                            title: 'Буквы и звуки: А-Й',
+                            class: 'done',
+                            general: '11',
+                            done: '11'
+
+                        },    {
+                            title: 'Буквы и звуки: К-Ф',
+                            class: 'process',
+                            general: '11',
+                            done: '5'
+                        },   {
+                            title: 'Буквы и звуки: Х-Я',
+                            general: '11',
+                            done: '0'
+                        }] %}
+
+                        {% for item in list %}
+
+                            <a href="#" class="{{ _ }} {{ item.class }}">
+                                <h3 class="{{ _ }}__title">
+                                    Буквы и звуки: А-Й
+                                </h3>
+                                <span class="{{ _ }}__subtitle">
+                            Hərflər və səslər
+                        </span>
+                                <br>
+                                <br>
+                                <div class="{{ _ }}__img img img--contain">
+                                    <img src="images/{{ _ }}/{{ loop.index }}.png" alt=""/>
+                                </div>
+
+                                <div class="{{ _ }}__progress">
+                                    <div class="{{ _ }}__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="{{ _ }}__progress-done">
+                                        <span>{{ item.done }}</span> / <span>{{ item.general }}</span>
+                                   </span>
+                                    </div>
+
+
+                                    {% set  p = 'progress-line' %}
+
+                                    <div class="progress-line" data-general="{{ item.general }}"
+                                         data-done="{{ item.done }}">
+                                        <div class="{{ p }}__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+                <br>
+                <br>
+
+
+                <div class="course__block">
+                    <h2 class="h2">Базовые фразы</h2>
+                    <br>
+                    <div class="course-list">
+                        {% set  _ = 'course-card' %}
+
+                        {% set  list = [{
+                            title: 'Учёба/Работа',
+                            subtitle: 'Araşdırmalar/işləmək'
+
+                        },    {
+                            title: 'Дом',
+                            subtitle: 'Ev'
+                        },   {
+                            title: 'Ремонт/уборка',
+                            subtitle: 'Təmir/təmizləmə'
+                        },   {
+                            title: 'Еда',
+                            subtitle: 'Qida'
+                        },   {
+                            title: 'Свободное время',
+                            subtitle: 'Boş vaxt'
+                        },   {
+                            title: 'Путешествия',
+                            subtitle: 'Səyahətlər'
+                        }] %}
+
+
+
+                        {% for item in list %}
+
+                            <a href="#" class="{{ _ }}">
+                                <h3 class="{{ _ }}__title">
+                                    {{ item.title }}
+                                </h3>
+                                <span class="{{ _ }}__subtitle">
+                            {{ item.subtitle }}
+                        </span>
+                                <br>
+                                <br>
+                                <div class="{{ _ }}__img img img--contain">
+                                    <img src="images/{{ _ }}/1{{ loop.index }}.png" alt=""/>
+                                </div>
+
+                                <div class="{{ _ }}__progress">
+                                    <div class="{{ _ }}__progress-text">
+                                   <span>
+Прогресс
+                                   </span>
+                                        <span class="{{ _ }}__progress-done">
+                                        <span>0</span> / <span>11</span>
+                                   </span>
+                                    </div>
+
+
+                                    {% set  p = 'progress-line' %}
+
+                                    <div class="progress-line" data-general="11" data-done="0">
+                                        <div class="{{ p }}__done">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        {% endfor %}
+
+
+                        {% for item in list %}
+
+                        {% endfor %}
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+</main>
+
+
+{% include "./2.parts/footer.njk" %}

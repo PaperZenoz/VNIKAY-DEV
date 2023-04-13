@@ -1,0 +1,617 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1631-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1631-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1094-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1094-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_557-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_557-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_3-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_3-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Вникай</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../favicon.svg">
+    <link rel="stylesheet" type="text/css" href="https://dev.vnikay.ru/css/style.css"/>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/inputmask.min.js"></script>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/functions.js"></script>
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://dev.vnikay.ru/css/video-js.min.css">
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/video.min.js"></script>
+
+
+    
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a class="header__logo" href="/"></a>
+        <div class="locale-container">
+            <div class="locale">
+                <div class="locale__value" data-value="ru">
+                    <div class="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <use xlink:href="/images/sprite.svg#icon_dropdown"/>
+                    </svg>
+                </div>
+                <div class="locale__dropdown">
+                    <div class="locale__dropdown__item" data-value="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="locale__dropdown__item" data-value="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="locale__dropdown__item" data-value="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="locale__dropdown__item" data-value="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="locale__dropdown__item" data-value="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__user">
+            <img class="header__user__avatar" alt="" src="https://dev.vnikay.ru/images/user.svg"/>
+            <span class="header__user__name">Мой профиль</span>
+            <svg viewBox="0 0 32 32" class="header__user__icon header__user__icon_toggle">
+                <use xlink:href="/images/sprite.svg#icon_arrow-down"/>
+            </svg>
+            <svg viewBox="0 0 40 41" class="header__user__icon header__user__icon_hamburger">
+                <use xlink:href="/images/sprite.svg#icon_menu"/>
+            </svg>
+        </div>
+        <menu class="header__menu">
+            <a class="header__menu__item" href="/password">
+                <svg viewBox="0 0 35 35">
+                    <use xlink:href="/images/sprite.svg#icon_lock"/>
+                </svg>
+                <span>Изменить пароль</span>
+            </a>
+            <a class="header__menu__item" href="/logout">
+                <svg viewBox="0 0 23 26">
+                    <use xlink:href="/images/sprite.svg#icon_exit"/>
+                </svg>
+                <span>Выход</span>
+            </a>
+        </menu>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+<main class="main lesson">
+    <section class="wrapper">
+        <div class="lesson__header">
+            <div class="lesson__number">
+                Буквы и звуки: А-Й
+            </div>
+            <div class="lesson__title">
+                <span>Буква А</span>
+                <div class="lesson__navigation">
+                    <a href="https://dev.vnikay.ru/lessons/"
+                       class="lesson__arrow lesson__prev disabled">
+                        <svg viewBox="0 0 15 13" style="transform: rotate(180deg)">
+                            <path d="M7.14758 4.26816H12.5001C13.5421 4.26816 14.3947 5.10346 14.3947 6.12437C14.3947 7.14529 13.5421 7.98059 12.5001 7.98059H7.14758V11.3032C7.14758 12.1385 6.12447 12.5469 5.53713 11.9529L0.269988 6.77405C-0.0899961 6.40281 -0.0899961 5.82738 0.269988 5.45614L5.53713 0.277308C6.12447 -0.316679 7.14758 0.110248 7.14758 0.926981V4.26816Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="lesson__list-button">
+                        <svg viewBox="0 0 15 15">
+                            <use xlink:href="images/second-sprite.svg#lesson-arrow-list"/>
+                        </svg>
+                        <svg viewBox="0 0 15 15">
+                            <use xlink:href="images/second-sprite.svg#lesson-arrow-list-close"/>
+                        </svg>
+                    </a>
+                    <a href="https://dev.vnikay.ru/lessons/2"
+                       class="lesson__arrow lesson__next">
+                        <svg viewBox="0 0 15 14">
+                            <path d="M7.85242 8.73184L2.49992 8.73184C1.45786 8.73184 0.605268 7.89654 0.605268 6.87562C0.605268 5.85471 1.45786 5.01941 2.49992 5.01941L7.85242 5.01941L7.85242 1.6968C7.85242 0.861501 8.87553 0.453133 9.46287 1.04712L14.73 6.22595C15.09 6.59719 15.09 7.17262 14.73 7.54386L9.46287 12.7227C8.87553 13.3167 7.85242 12.8898 7.85242 12.073L7.85242 8.73184Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lesson__progress-info">
+                Пройдено 1 / 11
+            </div>
+
+
+            
+
+
+
+
+            <div class="lesson__list">
+                
+                    <a href="#" class="lesson__list-item  active">
+                        Буква
+                        <span>A</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>Б</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>В</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>Г</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>Д</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>Е</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>Ё</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>Ж</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>З</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>И</span>
+
+                    </a>
+                
+                    <a href="#" class="lesson__list-item ">
+                        Буква
+                        <span>Й</span>
+
+                    </a>
+                
+
+
+            </div>
+
+
+        </div>
+        <div class="lesson__progress progress-line" data-general="11" data-done="1">
+            <div class="progress-line__done">
+
+            </div>
+        </div>
+
+
+        
+        
+            <div id="lesson-1" class="lesson__item">
+                <div class="lesson__item-n">
+                    <span>1.1 Видео с названием</span>
+                    
+                        <svg viewBox="0 0 34 34" id="play_icon_2" style="display:inline">
+                            <use xlink:href="/images/sprite.svg#icon_process"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="pause_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_pause"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="done_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_done"></use>
+                        </svg>
+                    
+
+                    
+
+
+                </div>
+
+
+                <div class="lesson__item-subtitle">
+                    Выполнить задание
+
+                    
+                </div>
+
+                <div class="lesson__item__video">
+                    <video data-id="7" data-bookmark="0.0"
+                           data-progress="Play" data-src="/lessons/api/video/7.m3u8"
+                           controls class="lesson__video video-js vjs-big-play-centered vjs-fill"
+                           data-setup='{ "playbackRates": [0.5, 1, 1.5, 2] }'>
+                        Your browser does not support the video tag.
+                        <source src="/lessons/api/video/7.m3u8" type="application/x-mpegURL"/>
+                        <track kind="subtitles"
+                               src="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L02/subtitles_03.vtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T053628Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=11a9387052241b3e2da4bdec4e4c2eb7ecd8805b19efbfc94f72d1bf62a67ab2"
+                               srclang="ru" label="Русский" default>
+                    </video>
+                    <div class="lesson__item__arrows">
+                        <a href="#lesson-2" class="lesson__item__arrow lesson__item__arrow--next">
+                            <svg viewBox="0 0 53 54">
+                                <use xlink:href="/images/second-sprite.svg#player-arrow-next"/>
+                                </use>
+                            </svg>
+
+                        </a>
+                        <a href="#lesson-0" class="lesson__item__arrow lesson__item__arrow--prev">
+                            <svg viewBox="0 0 53 54">
+                                <use xlink:href="/images/second-sprite.svg#player-arrow-prev"/>
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="lesson-2" class="lesson__item">
+                <div class="lesson__item-n">
+                    <span>1.2 Видео с названием</span>
+                    
+
+                    
+                        <svg viewBox="0 0 34 34" id="play_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_process"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="pause_icon_2" style="display:none">
+                            <use xlink:href="/images/sprite.svg#icon_pause"></use>
+                        </svg>
+                        <svg viewBox="0 0 25 24" id="done_icon_2" style="display:inline">
+                            <use xlink:href="/images/sprite.svg#icon_done"></use>
+                        </svg>
+                    
+
+
+                </div>
+
+
+                <div class="lesson__item-subtitle">
+                    Задание выполнено 
+
+                    
+                        <img src="images/lesson/like.png" style="margin-left: 5px" alt=""/>
+                    
+                </div>
+
+                <div class="lesson__item__video">
+                    <video data-id="7" data-bookmark="0.0"
+                           data-progress="Play" data-src="/lessons/api/video/7.m3u8"
+                           controls class="lesson__video video-js vjs-big-play-centered vjs-fill"
+                           data-setup='{ "playbackRates": [0.5, 1, 1.5, 2] }'>
+                        Your browser does not support the video tag.
+                        <source src="/lessons/api/video/7.m3u8" type="application/x-mpegURL"/>
+                        <track kind="subtitles"
+                               src="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L02/subtitles_03.vtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T053628Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=11a9387052241b3e2da4bdec4e4c2eb7ecd8805b19efbfc94f72d1bf62a67ab2"
+                               srclang="ru" label="Русский" default>
+                    </video>
+                    <div class="lesson__item__arrows">
+                        <a href="#lesson-3" class="lesson__item__arrow lesson__item__arrow--next">
+                            <svg viewBox="0 0 53 54">
+                                <use xlink:href="/images/second-sprite.svg#player-arrow-next"/>
+                                </use>
+                            </svg>
+
+                        </a>
+                        <a href="#lesson-1" class="lesson__item__arrow lesson__item__arrow--prev">
+                            <svg viewBox="0 0 53 54">
+                                <use xlink:href="/images/second-sprite.svg#player-arrow-prev"/>
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+
+
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__links">
+        <div class="footer__item">
+            <a href="/about" class="footer__about">
+                <span>О проекте</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/start" class="footer__start">
+                <span>Пользовательское соглашение</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/materials" class="footer__materials">
+                <span>Материалы</span>
+            </a>
+        </div>
+        <div class="ageLimit">
+            <svg  viewBox="0 0 23 23">
+                <use xlink:href="/images/sprite.svg#icon_age-limit"/>
+            </svg>
+        </div>
+    </div>
+    <div class="footer__delimiter"></div>
+    <div class="footer__support">
+        <div class="footer__support__contacts">
+            <div class="footer__item footer__call">
+                <a href="tel:8 495 969 7900">
+                    8 495 969 7900
+                </a>
+            </div>
+            <div class="footer__item footer__mail">
+                <a href="mailto:support@watchplayspeak.ru">
+                    support@watchplayspeak.ru
+                </a>
+            </div>
+        </div>
+        <div class="footer__time">С 06:00 до 18:00 в рабочие дни (время московское)</div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+    const locale = "ru";
+    const studentLocale = null;
+
+    let progressDone = 0;
+    let progressTotal = 4;
+    const doneSet = new Set();
+
+    function throttle(func, timeFrame) {
+        let lastTime = 0;
+        return function (...args) {
+            let now = new Date();
+            if (now - lastTime >= timeFrame) {
+                func(...args);
+                lastTime = now;
+            }
+        };
+    }
+
+    function sendBookmark(bookmark, videoId) {
+        let currentTime = this.currentTime();
+        if (currentTime !== 0 && currentTime !== bookmark) {
+            fetch(`/lessons/api/bookmark/${videoId}/${currentTime}`, {method: 'POST'})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!doneSet.has(videoId)) {
+                        if (data.progress === 'Done') {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'inline';
+                            doneSet.add(videoId);
+                            progressDone++;
+                            document.getElementById('progress_bar').style.width = `${(progressDone / progressTotal).toFixed(2) * 100}%`;
+                            document.getElementById('progress_text').textContent = `Пройдено ${progressDone} из ${progressTotal}`;
+                        } else {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'inline';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'none';
+                        }
+                    }
+                });
+        }
+    }
+
+    [...document.getElementsByTagName('video')].forEach(function (video) {
+        let videoId = video.dataset.id;
+        let videoPlayer = videojs(video, {
+            html5: {
+                vhs: {overrideNative: true},
+                nativeVideoTracks: false,
+                nativeAudioTracks: false,
+                nativeTextTracks: false
+            }
+        });
+        videoPlayer.playsinline(true);
+
+
+        videoPlayer.on('error', function (e) {
+            e.stopImmediatePropagation();
+        });
+        let bookmark = parseFloat(video.dataset.bookmark);
+        videoPlayer.currentTime(bookmark);
+        if (video.dataset.progress === 'Done') {
+            doneSet.add(videoId);
+        }
+        videoPlayer.ready(function () {
+            this.on('timeupdate', throttle(() => sendBookmark.call(this, bookmark, videoId), 2500));
+            this.on('ended', () => sendBookmark.call(this, bookmark, videoId));
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
+<script>
+    const locale = "ru"; // Student or default locale(ru)
+    const studentLocale = null; // Student locale or null
+
+    let progressDone = 0;
+    let progressTotal = 4;
+    const doneSet = new Set();
+
+    function throttle(func, timeFrame) {
+        let lastTime = 0;
+        return function (...args) {
+            let now = new Date();
+            if (now - lastTime >= timeFrame) {
+                func(...args);
+                lastTime = now;
+            }
+        };
+    }
+
+    function sendBookmark(bookmark, videoId) {
+        let currentTime = this.currentTime();
+        if (currentTime !== 0 && currentTime !== bookmark) {
+            fetch(`https://dev.vnikay.ru/lessons/api/bookmark/${videoId}/${currentTime}`, {method: 'POST'})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!doneSet.has(videoId)) {
+                        if (data.progress === 'Done') {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'inline';
+                            doneSet.add(videoId);
+                            progressDone++;
+                            document.getElementById('progress_bar').style.width = `${(progressDone / progressTotal).toFixed(2) * 100}%`;
+                            document.getElementById('progress_text').textContent = `Пройдено ${progressDone} из ${progressTotal}`;
+                        } else {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'inline';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'none';
+                        }
+                    }
+                });
+        }
+    }
+
+    [...document.getElementsByTagName('video')].forEach(function (video) {
+        let videoId = video.dataset.id;
+        let videoPlayer = videojs(video, {
+            html5: {
+                vhs: {overrideNative: true},
+                nativeVideoTracks: false,
+                nativeAudioTracks: false,
+                nativeTextTracks: false
+            }
+        });
+        videoPlayer.playsinline(true);
+
+        videoPlayer.on('error', function (e) {
+            e.stopImmediatePropagation();
+        });
+        let bookmark = parseFloat(video.dataset.bookmark);
+        videoPlayer.currentTime(bookmark);
+        if (video.dataset.progress === 'Done') {
+            doneSet.add(videoId);
+        }
+        videoPlayer.ready(function () {
+            this.on('timeupdate', throttle(() => sendBookmark.call(this, bookmark, videoId), 2500));
+            this.on('ended', () => sendBookmark.call(this, bookmark, videoId));
+        });
+    });
+</script>
+</body>
+</html>

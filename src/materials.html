@@ -1,0 +1,527 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1631-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1631-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_1094-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_1094-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_557-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_557-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <style class="vjs-styles-dimensions">
+        .vjs_video_3-dimensions {
+            width: 720px;
+            height: 1280px;
+        }
+
+        .vjs_video_3-dimensions.vjs-fluid {
+            padding-top: 177.77777777777777%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Вникай</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../favicon.svg">
+    <link rel="stylesheet" type="text/css" href="https://dev.vnikay.ru/css/style.css"/>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/inputmask.min.js"></script>
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/functions.js"></script>
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://dev.vnikay.ru/css/video-js.min.css">
+    <script type="text/javascript" src="https://dev.vnikay.ru/js/video.min.js"></script>
+
+
+    
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a class="header__logo" href="/"></a>
+        <div class="locale-container">
+            <div class="locale">
+                <div class="locale__value" data-value="ru">
+                    <div class="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <use xlink:href="/images/sprite.svg#icon_dropdown"/>
+                    </svg>
+                </div>
+                <div class="locale__dropdown">
+                    <div class="locale__dropdown__item" data-value="ru">
+                        <span class="icon_flag ru"></span>
+                        Русский
+                    </div>
+                    <div class="locale__dropdown__item" data-value="az">
+                        <span class="icon_flag az"></span>
+                        Azərbaycan
+                    </div>
+                    <div class="locale__dropdown__item" data-value="ky">
+                        <span class="icon_flag ky"></span>
+                        Кыргызча
+                    </div>
+                    <div class="locale__dropdown__item" data-value="uz">
+                        <span class="icon_flag uz"></span>
+                        Oʻzbekcha
+                    </div>
+                    <div class="locale__dropdown__item" data-value="tg">
+                        <span class="icon_flag tg"></span>
+                        Tоҷикӣ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__user">
+            <img class="header__user__avatar" alt="" src="https://dev.vnikay.ru/images/user.svg"/>
+            <span class="header__user__name">Мой профиль</span>
+            <svg viewBox="0 0 32 32" class="header__user__icon header__user__icon_toggle">
+                <use xlink:href="/images/sprite.svg#icon_arrow-down"/>
+            </svg>
+            <svg viewBox="0 0 40 41" class="header__user__icon header__user__icon_hamburger">
+                <use xlink:href="/images/sprite.svg#icon_menu"/>
+            </svg>
+        </div>
+        <menu class="header__menu">
+            <a class="header__menu__item" href="/password">
+                <svg viewBox="0 0 35 35">
+                    <use xlink:href="/images/sprite.svg#icon_lock"/>
+                </svg>
+                <span>Изменить пароль</span>
+            </a>
+            <a class="header__menu__item" href="/logout">
+                <svg viewBox="0 0 23 26">
+                    <use xlink:href="/images/sprite.svg#icon_exit"/>
+                </svg>
+                <span>Выход</span>
+            </a>
+        </menu>
+    </div>
+</header>
+
+
+
+
+
+
+<main class="main">
+    <div class="wrapper">
+        <section class="main__block materials">
+            
+            <div class="course__head">
+                <div class="course__done">
+                    <h2 class="course__done-title h2 h2--with-icon">
+                        <svg viewBox="0 0 53 53">
+                            <use xlink:href="/images/second-sprite.svg#star"></use>
+                        </svg>
+                        Ваш прогресс
+                    </h2>
+                    <div class="course__progress">
+                        <div class="course__progress__text">
+                            <span>Пройдено</span>: <span style="color:black;font-weight: 600;">16</span>/<span>129</span>
+                        </div>
+
+
+                        <div class="progress-line progress-line--big" data-general="129" data-done="16">
+                            <div class="progress-line__done">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="course__license">
+                    <strong class="course__license-title">
+                        <svg viewBox="0 0 24 28">
+                            <use xlink:href="/images/second-sprite.svg#timer"/>
+                        </svg>
+                        360 ДНЕЙ
+                    </strong>
+                    <div class="course__license-subtitle color-gray">до окночания действия лицензии</div>
+                    <button class="btn" onclick="showLicenseModal()">
+                        Ввести новый ключ
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="courses__search">
+                <form method='GET'>
+                    <input name="search" class="input" placeholder="Поиск" id="search" value=""/>
+                    <button type="submit">
+                        <svg viewBox="0 0 22 22">
+                            <use xlink:href="/images/sprite.svg#icon_search"/>
+                        </svg>
+                        <span>Найти</span>
+                    </button>
+                </form>
+            </div>
+
+
+
+            <div class="courses__title">Материалы</div>
+
+            <ol class="materials__list">
+                
+                    <li class="material">
+                        <span class="material__count">1</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>1</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">2</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>2</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">3</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>3</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">4</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>4</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">5</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>5</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">6</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>6</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">7</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>7</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">8</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>8</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">9</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>9</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+                    <li class="material">
+                        <span class="material__count">10</span>
+                        <svg class="material__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 2V9H20" stroke="#9B9FA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="material__id">
+            <span>ID: </span>
+            <span>10</span>
+          </span>
+                        <a href="https://vnikay-dev.storage.yandexcloud.net/russiancourse/M01/L01/01.ts?response-content-disposition=attachment%3B%20filename%20%3D%221.ts%22&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230413T111504Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=86400&amp;X-Amz-Credential=Hm_j0W3MfuF8lw_fFiop%2F20230413%2Fru-central1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9ea5868656969b833766b6ba244421d14d597350c3d47960d378aca83762ef3a" class="material__load" download="1">
+                            <img src="https://dev.vnikay.ru/images/icons/icon_cloud.svg" alt="download">
+                            <span>Скачать</span>
+                        </a>
+                    </li>
+                
+
+
+            </ol>
+
+        </section>
+    </div>
+</main>
+
+
+
+<footer class="footer">
+    <div class="footer__links">
+        <div class="footer__item">
+            <a href="/about" class="footer__about">
+                <span>О проекте</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/start" class="footer__start">
+                <span>Пользовательское соглашение</span>
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="/materials" class="footer__materials">
+                <span>Материалы</span>
+            </a>
+        </div>
+        <div class="ageLimit">
+            <svg  viewBox="0 0 23 23">
+                <use xlink:href="/images/sprite.svg#icon_age-limit"/>
+            </svg>
+        </div>
+    </div>
+    <div class="footer__delimiter"></div>
+    <div class="footer__support">
+        <div class="footer__support__contacts">
+            <div class="footer__item footer__call">
+                <a href="tel:8 495 969 7900">
+                    8 495 969 7900
+                </a>
+            </div>
+            <div class="footer__item footer__mail">
+                <a href="mailto:support@watchplayspeak.ru">
+                    support@watchplayspeak.ru
+                </a>
+            </div>
+        </div>
+        <div class="footer__time">С 06:00 до 18:00 в рабочие дни (время московское)</div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+    const locale = "ru";
+    const studentLocale = null;
+
+    let progressDone = 0;
+    let progressTotal = 4;
+    const doneSet = new Set();
+
+    function throttle(func, timeFrame) {
+        let lastTime = 0;
+        return function (...args) {
+            let now = new Date();
+            if (now - lastTime >= timeFrame) {
+                func(...args);
+                lastTime = now;
+            }
+        };
+    }
+
+    function sendBookmark(bookmark, videoId) {
+        let currentTime = this.currentTime();
+        if (currentTime !== 0 && currentTime !== bookmark) {
+            fetch(`/lessons/api/bookmark/${videoId}/${currentTime}`, {method: 'POST'})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!doneSet.has(videoId)) {
+                        if (data.progress === 'Done') {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'inline';
+                            doneSet.add(videoId);
+                            progressDone++;
+                            document.getElementById('progress_bar').style.width = `${(progressDone / progressTotal).toFixed(2) * 100}%`;
+                            document.getElementById('progress_text').textContent = `Пройдено ${progressDone} из ${progressTotal}`;
+                        } else {
+                            document.getElementById(`play_icon_${videoId}`).style.display = 'none';
+                            document.getElementById(`pause_icon_${videoId}`).style.display = 'inline';
+                            document.getElementById(`done_icon_${videoId}`).style.display = 'none';
+                        }
+                    }
+                });
+        }
+    }
+
+    [...document.getElementsByTagName('video')].forEach(function (video) {
+        let videoId = video.dataset.id;
+        let videoPlayer = videojs(video, {
+            html5: {
+                vhs: {overrideNative: true},
+                nativeVideoTracks: false,
+                nativeAudioTracks: false,
+                nativeTextTracks: false
+            }
+        });
+        videoPlayer.playsinline(true);
+
+
+        videoPlayer.on('error', function (e) {
+            e.stopImmediatePropagation();
+        });
+        let bookmark = parseFloat(video.dataset.bookmark);
+        videoPlayer.currentTime(bookmark);
+        if (video.dataset.progress === 'Done') {
+            doneSet.add(videoId);
+        }
+        videoPlayer.ready(function () {
+            this.on('timeupdate', throttle(() => sendBookmark.call(this, bookmark, videoId), 2500));
+            this.on('ended', () => sendBookmark.call(this, bookmark, videoId));
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+@mixin m($xxl, $xl, $lg, $md, $sm)
+  margin: $xxl
+  @media screen and (max-width: 1919px)
+    margin: $xl
+  @media screen and (max-width: 1365px)
+    margin: $lg
+  @media screen and (max-width: 1023px)
+    margin: $md
+  @media screen and (max-width: 639px)
+    margin: $sm
+
+@mixin mb($xxl, $xl, $lg, $md, $sm)
+  margin-bottom: $xxl
+  @media screen and (max-width: 1919px)
+    margin-bottom: $xl
+  @media screen and (max-width: 1365px)
+    margin-bottom: $lg
+  @media screen and (max-width: 1023px)
+    margin-bottom: $md
+  @media screen and (max-width: 639px)
+    margin-bottom: $sm
+
+@mixin mt($xxl, $xl, $lg, $md, $sm)
+  margin-top: $xxl
+  @media screen and (max-width: 1919px)
+    margin-top: $xl
+  @media screen and (max-width: 1365px)
+    margin-top: $lg
+  @media screen and (max-width: 1023px)
+    margin-top: $md
+  @media screen and (max-width: 639px)
+    margin-top: $sm
+
+@mixin ml($xxl, $xl, $lg, $md, $sm)
+  margin-left: $xxl
+  @media screen and (max-width: 1919px)
+    margin-left: $xl
+  @media screen and (max-width: 1365px)
+    margin-left: $lg
+  @media screen and (max-width: 1023px)
+    margin-left: $md
+  @media screen and (max-width: 639px)
+    margin-left: $sm
+
+@mixin mr($xxl, $xl, $lg, $md, $sm)
+  margin-right: $xxl
+  @media screen and (max-width: 1919px)
+    margin-right: $xl
+  @media screen and (max-width: 1365px)
+    margin-right: $lg
+  @media screen and (max-width: 1023px)
+    margin-right: $md
+  @media screen and (max-width: 639px)
+    margin-right: $sm
+
+@mixin mx($xxl, $xl, $lg, $md, $sm)
+  margin-left: $xxl
+  margin-right: $xxl
+  @media screen and (max-width: 1919px)
+    margin-left: $xl
+    margin-right: $xl
+  @media screen and (max-width: 1365px)
+    margin-left: $lg
+    margin-right: $lg
+  @media screen and (max-width: 1023px)
+    margin-left: $md
+    margin-right: $md
+  @media screen and (max-width: 639px)
+    margin-left: $sm
+    margin-right: $sm
+
+@mixin my($xxl, $xl, $lg, $md, $sm)
+  margin-top: $xxl
+  margin-bottom: $xxl
+  @media screen and (max-width: 1919px)
+    margin-top: $xl
+    margin-bottom: $xl
+  @media screen and (max-width: 1365px)
+    margin-top: $lg
+    margin-bottom: $lg
+  @media screen and (max-width: 1023px)
+    margin-top: $md
+    margin-bottom: $md
+  @media screen and (max-width: 639px)
+    margin-top: $sm
+    margin-bottom: $sm
+
+
+
+
+$loop-begin: 0
+$loop-end: 200
+$interval: 5
+$cursor: $loop-begin
+
+@while $cursor <= $loop-end
+  %mb#{$cursor}
+    @include mb(#{$cursor + 'px'}, #{$cursor + 'px'}, calc(#{$cursor + 'px'} * 0.9), calc(#{$cursor + 'px'} * 0.7), calc(#{$cursor + 'px'} * 0.5))
+  %mt#{$cursor}
+    @include mt(#{$cursor + 'px'}, #{$cursor + 'px'}, calc(#{$cursor + 'px'} * 0.9), calc(#{$cursor + 'px'} * 0.7), calc(#{$cursor + 'px'} * 0.5))
+  %ml#{$cursor}
+    @include ml(#{$cursor + 'px'}, #{$cursor + 'px'}, calc(#{$cursor + 'px'} * 0.9), calc(#{$cursor + 'px'} * 0.7), calc(#{$cursor + 'px'} * 0.5))
+  %mr#{$cursor}
+    @include mr(#{$cursor + 'px'}, #{$cursor + 'px'}, calc(#{$cursor + 'px'} * 0.9), calc(#{$cursor + 'px'} * 0.7), calc(#{$cursor + 'px'} * 0.5))
+  %mx#{$cursor}
+    @include mx(#{$cursor + 'px'}, #{$cursor + 'px'}, calc(#{$cursor + 'px'} * 0.9), calc(#{$cursor + 'px'} * 0.7), calc(#{$cursor + 'px'} * 0.5))
+  %my#{$cursor}
+    @include my(#{$cursor + 'px'}, #{$cursor + 'px'}, calc(#{$cursor + 'px'} * 0.9), calc(#{$cursor + 'px'} * 0.7), calc(#{$cursor + 'px'} * 0.5))
+  %m#{$cursor}
+    @include m(#{$cursor + 'px'}, #{$cursor + 'px'}, calc(#{$cursor + 'px'} * 0.9), calc(#{$cursor + 'px'} * 0.7), calc(#{$cursor + 'px'} * 0.5))
+
+  $cursor: $cursor + $interval
+
+
+
+
+%lc
+  &:last-child
+    margin-bottom: 0

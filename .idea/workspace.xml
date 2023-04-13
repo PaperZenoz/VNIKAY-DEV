@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2cc7621-09fa-4a8b-9326-488ef5cc4321" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1n62s9LdZiohzGEP9kSzfVFrCml" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/lesson" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Desktop\VNIKAY\VNIKAY-DEV\src\images\lesson" />
+      <recent name="C:\Users\Администратор\Desktop\VNIKAY\VNIKAY-DEV\src" />
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\sass" />
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\assets" />
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\twig\1.components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\sass\1.base" />
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\sass\1.settings\1.base" />
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\twig\1.components" />
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\sass\5.sections" />
+      <recent name="C:\Users\Администратор\Desktop\start\templates\p\new-project\src\sass\passive\0.base" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="d" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>d</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.d" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2cc7621-09fa-4a8b-9326-488ef5cc4321" name="Default Changelist" comment="" />
+      <created>1610696423560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610696423560</updated>
+      <workItem from="1610696425524" duration="2559000" />
+      <workItem from="1611032086928" duration="176000" />
+      <workItem from="1611032383794" duration="573000" />
+      <workItem from="1611033299140" duration="61000" />
+      <workItem from="1611044876778" duration="304000" />
+      <workItem from="1611804876363" duration="863000" />
+      <workItem from="1613443930722" duration="6349000" />
+      <workItem from="1613791110051" duration="1201000" />
+      <workItem from="1617856825322" duration="630000" />
+      <workItem from="1619081435310" duration="634000" />
+      <workItem from="1619082078448" duration="1093000" />
+      <workItem from="1621920708379" duration="199000" />
+      <workItem from="1624858656038" duration="2932000" />
+      <workItem from="1624868793054" duration="723000" />
+      <workItem from="1629697057467" duration="582000" />
+      <workItem from="1629698083716" duration="11000" />
+      <workItem from="1630402211777" duration="42000" />
+      <workItem from="1637059950495" duration="128000" />
+      <workItem from="1642655988389" duration="717000" />
+      <workItem from="1652261116013" duration="3884000" />
+      <workItem from="1652339553534" duration="4638000" />
+      <workItem from="1652344257798" duration="2430000" />
+      <workItem from="1652686320614" duration="3453000" />
+      <workItem from="1655461955330" duration="1063000" />
+      <workItem from="1655697155609" duration="598000" />
+      <workItem from="1656583209256" duration="1985000" />
+      <workItem from="1656905106002" duration="10000" />
+      <workItem from="1656905161084" duration="81000" />
+      <workItem from="1657688437039" duration="1042000" />
+      <workItem from="1658741898523" duration="1406000" />
+      <workItem from="1660293711958" duration="230000" />
+      <workItem from="1663229896682" duration="3734000" />
+      <workItem from="1665640681794" duration="359000" />
+      <workItem from="1666771663894" duration="1788000" />
+      <workItem from="1667805623314" duration="5875000" />
+      <workItem from="1667979429498" duration="3276000" />
+      <workItem from="1668398718925" duration="296000" />
+      <workItem from="1668399078758" duration="698000" />
+      <workItem from="1669010467585" duration="5878000" />
+      <workItem from="1673933945122" duration="382000" />
+      <workItem from="1673944230227" duration="474000" />
+      <workItem from="1674555232711" duration="1351000" />
+      <workItem from="1674704821574" duration="709000" />
+      <workItem from="1675135970579" duration="5940000" />
+      <workItem from="1675145691631" duration="2918000" />
+      <workItem from="1675324965094" duration="884000" />
+      <workItem from="1678358081228" duration="621000" />
+      <workItem from="1680160905022" duration="188000" />
+      <workItem from="1680599136469" duration="748000" />
+      <workItem from="1680601308787" duration="841000" />
+      <workItem from="1680602201567" duration="4188000" />
+      <workItem from="1681197399563" duration="13301000" />
+      <workItem from="1681276006277" duration="17000" />
+      <workItem from="1681276068256" duration="1752000" />
+      <workItem from="1681277935665" duration="5261000" />
+      <workItem from="1681359915869" duration="12563000" />
+      <workItem from="1681384698368" duration="203000" />
+      <workItem from="1681385049822" duration="3150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="727" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1680601610813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1680601610813" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1675142511643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1675142511643" />
+    <state x="461" y="151" key="SettingsEditor" timestamp="1681387127504">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1681387127504" />
+    <state x="816" y="275" width="585" height="592" key="find.popup" timestamp="1681364676183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="816" y="275" width="585" height="592" key="find.popup/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1681364676183" />
+    <state x="616" y="235" key="run.anything.popup" timestamp="1675142792402">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1675142792402" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1681276648371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1681276648371" />
+  </component>
+</project>
